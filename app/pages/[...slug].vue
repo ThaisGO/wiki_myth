@@ -5,7 +5,7 @@ const route = useRoute()
 const { prev, next } = useNavigation(route.path)
 
 const { data: page } = await useAsyncData('page-' + route.path, () => {
-  return queryCollection('content').path(route.path).first()
+  return queryCollection('content').path(route.path === '/' ? '/index' : route.path).first()
 })
 
 if (!page.value) {
