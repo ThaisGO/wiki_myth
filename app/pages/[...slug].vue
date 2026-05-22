@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const route = useRoute()
-// const route = useRoute()
 
 const { prev, next } = useNavigation(route.path)
 
@@ -8,7 +7,7 @@ const { data: page } = await useAsyncData(
   'page-' + route.path,
   () => {
     return queryCollection('content')
-      .path(route.path === '/' ? '/index' : route.path)
+      .path(route.path)
       .first()
   }
 )

@@ -6,6 +6,9 @@ export default defineNuxtConfig({
       mode: 'out-in'
     }
   },
+  nitro: {
+    preset: 'vercel'
+  },
   modules: [
     '@nuxt/content', '@nuxtjs/tailwindcss'
   ],css: [
