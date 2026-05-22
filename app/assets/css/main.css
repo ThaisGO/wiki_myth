@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .wiki-content {
+    @apply max-w-none;
+  }
+
+  .wiki-content h1 {
+    @apply text-3xl font-bold text-[#a7f3d0] mb-8;
+  }
+
+  .wiki-content h2 {
+    @apply text-3xl font-semibold text-[#86efac] mt-12 mb-6 border-b border-[#262626] pb-3;
+  }
+
+  .wiki-content h3 {
+    @apply text-2xl font-semibold text-[#4ade80] mt-10 mb-4;
+  }
+
+  .wiki-content p {
+    @apply text-[#d4d4d8] text-lg leading-8 mb-6;
+  }
+
+  .wiki-content strong {
+    @apply text-[#4ade80] font-semibold;
+  }
+
+  .wiki-content em {
+    @apply text-[#86efac] italic;
+  }
+
+  .wiki-content a {
+    @apply text-[#4ade80] underline underline-offset-4 transition-colors;
+  }
+
+  .wiki-content a:hover {
+    @apply text-[#86efac];
+  }
+
+  .wiki-content ul {
+    @apply pl-6 my-6 space-y-2;
+  }
+
+  .wiki-content ol {
+    @apply pl-6 my-6 space-y-2;
+  }
+
+  .wiki-content li {
+    @apply text-[#d4d4d8];
+  }
+
+  .wiki-content blockquote {
+    @apply border-l-4 border-[#22c55e] bg-[#1a2e1a] px-6 py-4 rounded-r-xl my-8;
+  }
+
+  .wiki-content hr {
+    @apply border-[#262626] my-12;
+  }
+
+  .wiki-content img {
+    @apply max-w-full h-auto my-8;
+  }
+
+  .wiki-content code {
+    @apply bg-[#1f1f1f] text-[#86efac] px-2 py-1 rounded;
+  }
+
+  .wiki-content pre {
+    @apply bg-[#141414] border border-[#262626] rounded-xl p-6 overflow-x-auto my-8;
+  }
+
+  .wiki-content table {
+    @apply w-full border-collapse my-8;
+  }
+
+  .wiki-content th {
+    @apply border border-[#262626] bg-[#1f1f1f] text-[#a7f3d0] px-4 py-3 text-left;
+  }
+
+  .wiki-content td {
+    @apply border border-[#262626] px-4 py-3;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
+}
