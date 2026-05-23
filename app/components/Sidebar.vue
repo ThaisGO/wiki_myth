@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { navigation } from '@/data/navigation'
 
 const expandedSections = ref({
-  gameGuide: true,
+  gameGuide: false,
   classBuild: false
 })
 
@@ -16,14 +16,16 @@ const toggleSection = (section) => {
 <template>
     <aside class="fixed left-0 top-0 h-screen lg:w-80 md:w-64 flex-shrink-0 bg-[#141414] border-r border-[#262626] overflow-y-auto">
     <div class="p-6">
+      <NuxtLink to="/">
       <div class="flex items-center gap-3 mb-8 pb-6 border-b border-[#262626]">
-        <img src="/logo.png" alt="Logo" class="w-12 h-12 rounded-lg" />
-
-        <div>
-          <h1 class="text-xl font-semibold text-[#a7f3d0]"> Myth of Yggdrasil </h1>
-          <p class="text-sm text-[#a1a1aa]"> Wiki </p>
+          <img src="/logo.png" alt="Logo" class="w-12 h-12 rounded-lg" />
+          
+          <div>
+            <h1 class="text-xl font-semibold text-[#a7f3d0]"> Myth of Yggdrasil </h1>
+            <p class="text-sm text-[#a1a1aa]"> Wiki </p>
+          </div>
         </div>
-      </div>
+      </NuxtLink>
 
       <nav class="space-y-6">
         <div v-for="section in navigation" :key="section.title"

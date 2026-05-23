@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,7 +23,7 @@
   }
 
   .wiki-content p {
-    @apply text-[#d4d4d8] text-lg leading-8 mb-6;
+    @apply text-[#d4d4d8] text-lg leading-8 mb-5;
   }
 
   .wiki-content strong {
@@ -83,6 +85,14 @@
   .wiki-content td {
     @apply border border-[#262626] px-4 py-3;
   }
+
+  .wiki-content mark {
+    @apply bg-green-500/20 text-green-300 px-1 rounded;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .page-enter-active,

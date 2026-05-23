@@ -14,11 +14,10 @@ Também foram adicionados alguns atalhos, como os barcos no nordeste de Aldebara
 
 Em Morroc foram adicionados os camelos, que te levam até os campos de prontera ou de prontera para morroc, cortando o caminho através da fenda de Morroc.
 
-> [!TIP]
 > 💡Dica: No começo do jogo você ganha algumas moedas (Training Island Reward Coins) de acordo com quantas quests você concluiu no treinamento inicial. Elas podem ser trocadas pelo item “Transport Route Ticket”, que adiciona as cidades principais sendo **Alberta**, Geffen, Izlude, Morroc e Payon.
 
 
-![warper](/warper.png) 
+![warper](/guia-jogo/warper.png) 
 
 Mas isso não quer dizer que você não possa teleportar para outros mapas, mas para isso você vai depender que uma classe que tenha Portal ou que ela abra uma lojinha de teleporte.
 
@@ -26,4 +25,4 @@ Eles conseguem te vender o Warp para os mapas que eles tenham memorizado, mas al
 
 A principal diferença é que na opção de portal é possível escolher também campos, não somente Cidades como é o caso do Cocheiro.
 
-![warper](/warper-field.png) 
+![warper-field](/guia-jogo/warper-field.png) 

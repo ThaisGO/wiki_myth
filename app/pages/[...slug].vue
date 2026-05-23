@@ -5,11 +5,7 @@ const { prev, next } = useNavigation(route.path)
 
 const { data: page } = await useAsyncData(
   'page-' + route.path,
-  () => {
-    return queryCollection('content')
-      .path(route.path)
-      .first()
-  }
+  () => { return queryCollection('content').path(route.path).first() }
 )
 
 if (!page.value) {
@@ -18,9 +14,7 @@ if (!page.value) {
 </script>
 
 <template>
-
   <div>
-
     <article class="wiki-content">
       <ContentRenderer
         v-if="page"
@@ -28,9 +22,7 @@ if (!page.value) {
       />
     </article>
 
-    <div
-      class="mt-16 flex items-center justify-between border-t border-[#262626] pt-8"
-    >
+    <div class="mt-16 flex items-center justify-between border-t border-[#262626] pt-8">
 
       <!-- Previous -->
       <NuxtLink
@@ -75,11 +67,7 @@ if (!page.value) {
         <span class="text-xl transition-transform group-hover:translate-x-1">
           →
         </span>
-
       </NuxtLink>
-
     </div>
-
   </div>
-
 </template>
