@@ -5,7 +5,18 @@ const { prev, next } = useNavigation(route.path)
 
 const { data: page } = await useAsyncData(
   'page-' + route.path,
-  () => { return queryCollection('content').path(route.path).first() }
+  // () => { return queryCollection('content').path(route.path).first() }
+  async () => {
+    console.log('ROUTE:', route.path)
+
+    const result = await queryCollection('content')
+      .path(route.path)
+      .first()
+
+    console.log('PAGE:', result)
+
+    return result
+  }
 )
 
 if (!page.value) {
